@@ -5,15 +5,23 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+        <nav class="navbar" role="navigation" aria-label="main navigation">
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        <RouterLink to="/">Outfits </RouterLink>
+      </a>
+
+<!--
+      <a class="navbar-item">
         <RouterLink to="/about">About</RouterLink>
-      </nav>
+      </a>-->
+    </div>
+  </div>
+</nav>
     </div>
   </header>
 
