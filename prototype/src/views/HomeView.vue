@@ -18,9 +18,10 @@ const img_path = computed(() => {
   <div class="box">
   <div class="columns">
   <div class="column">
-  <figure class="image is-128x128">
+  <div class="content"><p>This is where the generated image would go</p>
   <img src="https://bulma.io/images/placeholders/128x128.png">
-</figure>
+  </div>
+
   </div>
   <div class="column">
   <div class="columns">
@@ -32,6 +33,8 @@ const img_path = computed(() => {
   <select v-model="pose">
     <option>standing</option>
     <option>sitting</option>
+    <option>leaning</option>
+    <option>lying down</option>
   </select>
 </div>
 </div>
@@ -43,7 +46,9 @@ const img_path = computed(() => {
   <div class="select">
   <select v-model="angel">
     <option>front</option>
-    <option>side</option>
+    <option>left side</option>
+    <option>left side</option>
+    <option>back</option>
   </select>
 </div>
 </div>
@@ -53,7 +58,10 @@ const img_path = computed(() => {
   <label class="label">Location</label>
   <div class="select">
   <select>
-    <option>room</option>
+    <option>garden</option>
+    <option>city</option>
+    <option>park</option>
+    <option>living room</option>
   </select>
 </div>
 </div>
@@ -70,27 +78,13 @@ const img_path = computed(() => {
 
     <div class="field">
   <div class="control">
-    <input @click="shirt=0" type="image" src="https://bulma.io/images/placeholders/128x128.png" height=128 width=128>
+    <img src="@/assets/red-shirt.png" height=128 width=128>
 
   </div>
 </div>
     <div class="field">
   <div class="control">
-    <input @click="pant=0" type="image" src="https://bulma.io/images/placeholders/128x128.png" height=128 width=128>
-  </div>
-</div>
-  </div>
-
-  <div class="column">
-
-    <div class="field">
-  <div class="control">
-    <input @click="shirt=1" type="image" src="https://bulma.io/images/placeholders/128x128.png" height=128 width=128>
-  </div>
-</div>
-    <div class="field">
-  <div class="control">
-    <input @click="pant=1" type="image" src="https://bulma.io/images/placeholders/128x128.png" height=128 width=128>
+    <img src="@/assets/b.png" height=128 width=128>
   </div>
 </div>
   </div>
@@ -99,12 +93,26 @@ const img_path = computed(() => {
 
     <div class="field">
   <div class="control">
-    <input @click="shirt=2" type="image" src="https://bulma.io/images/placeholders/128x128.png" height=128 width=128>
+    <img src="@/assets/green-shirt.png" height=128 width=128>
   </div>
 </div>
     <div class="field">
   <div class="control">
-    <input @click="pant=2" type="image" src="https://bulma.io/images/placeholders/128x128.png" height=128 width=128>
+    <img src="@/assets/bb.png" height=128 width=128>
+  </div>
+</div>
+  </div>
+
+  <div class="column">
+
+    <div class="field">
+  <div class="control">
+    <img src="@/assets/blue-shirt.png" height=128 width=128>
+  </div>
+</div>
+    <div class="field">
+  <div class="control">
+    <img src="@/assets/bbb.png" height=128 width=128>
   </div>
 </div>
   </div>
